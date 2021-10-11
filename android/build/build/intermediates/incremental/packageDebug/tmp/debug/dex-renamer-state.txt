@@ -1,0 +1,4 @@
+#Thu Sep 30 14:16:37 WIB 2021
+base.0=E\:\\repo\\repo_godot\\godot101\\android\\build\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
