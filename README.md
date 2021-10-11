@@ -4,4 +4,4 @@ tolong diingat bahwa setiap video saya akan mengupdate github ini jadi kalau ada
 sprite berasal dari internet dan saya buat sendiri : 
 link pembuat ada di video pembelajaran
 
-music tidak free, saya minta ijin temen saya. jadi mohon yang fork atau download jangan gunakan commercially
+music tidak free, saya minta ijin temen saya. jadi mohon yang fork atau download jangan gunakan 
