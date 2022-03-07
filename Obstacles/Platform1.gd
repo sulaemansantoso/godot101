@@ -12,7 +12,6 @@ var waktu = 0.0
 func _ready():
 	pass
 
-	
 func _physics_process(delta):
 	if (waktu > 0) :
 		waktu -= delta
@@ -24,12 +23,10 @@ func _physics_process(delta):
 			arah = tujuan - $Body.position
 		else :
 			arah = awal - $Body.position
-		
 		if (arah.length() < kecepatan*delta):
 			#sudah sampe ke titik tujuan
 			pergi = !pergi
 			waktu = waktu_tunggu
-
 		arah = arah.normalized()
 	#	$Body.move_and_slide(arah* kecepatan)
 		$Body.position += arah * kecepatan* delta

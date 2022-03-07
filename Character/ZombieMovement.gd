@@ -64,8 +64,7 @@ func _physics_process(delta):
 			$Cam.offset.y = lerp($Cam.offset.y , 0, 0.1)
 	
 	if (Input.is_action_just_pressed("Lompat") and
-		( is_on_floor() or (jump_count < max_jump)) ):
-			
+		( is_on_floor() or (jump_count < max_jump)) ):	
 		#load suara pasang ke sound stream
 		var audiostream = ResourceLoader.load("res://Audio/jumping.wav")
 		$ZombieSound.stream = audiostream 

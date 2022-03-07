@@ -4,7 +4,17 @@ extends Node2D
 var point = 0
 var enemy_point = 0
 
+func _get_Point():
+	return point
+
+
 func _ready():
+	
+	var file = File.new()
+	file.open("user://zombiesavean.dat", File.READ)
+	point = file.get_64()
+	file.close()
+
 #	$Brain.connect("brain_keambil" , self ,"_on_Tambah_Point")
 #	$Brain2.connect("brain_keambil", self, "_on_Tambah_Point")
 #	$AdMob.load_banner()
@@ -42,9 +52,9 @@ func _on_player_hit(damage , enemy_pos) :
 		get_tree().reload_current_scene()
 
 func _process(delta):
-	if (Input.is_action_just_pressed("testing")):
-		get_tree().call_group("brains", "queue_free")
-		
+#	if (Input.is_action_just_pressed("testing")):
+#		get_tree().call_group("brains", "queue_free")
+	pass
 
 
 func _on_Tambah_Point(p):

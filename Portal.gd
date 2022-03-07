@@ -10,6 +10,13 @@ func _init():
 
 func _pindah_scene() :
 	if (visible == true) :
+		var file = File.new()
+		file.open("user://zombiesavean.dat", File.WRITE)
+		file.store_64(
+			get_tree().current_scene._get_Point()
+		)
+		file.close()
+		
 		get_tree().change_scene_to(scene_berikut)
 #		get_tree().change_scene("res://Level/Scene02.tscn")
 #		get_tree().change_scene(scene_berikut)
